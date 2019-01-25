@@ -1,0 +1,25 @@
+page-contact {
+  ion-content p{
+    position: relative;
+    float: left;
+    margin: -30px;
+    font-weight: bold;
+  }
+
+  ion-content ion-label{
+    padding-top: -20px;
+  }
+
+  ion-content label{
+
+  }
+
+  ion-content ion-list {
+    text-align: center;
+  }
+
+  ion-content ion-fab {
+    position: fixed;
+  }
+
+}

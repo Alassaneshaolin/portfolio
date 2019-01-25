@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Articles</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list *ngFor="let article of articles" (click)="openDetails($event,articles)">
+    <ion-card-title >
+      {{ article.titre }}
+    </ion-card-title>
+    <ion-card *ngFor="let article of articles" (click)="openDetails($event,articles)">
+      {{ article.article }}
+    </ion-card>
+  </ion-list>
+
+</ion-content>
